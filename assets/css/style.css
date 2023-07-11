@@ -1,0 +1,86 @@
+/* Global style */
+:root {
+    --primary: #6f60ad;
+    --secondary: #007554;
+    --tertiary: #788585;
+    --light-dark: #6f6866;
+    --dark: #211f1f;
+    --border-radius: 0.3rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--dark);
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--secondary);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--secondary);
+    line-height: 1.25;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  main {
+    margin: 20px auto;
+    width: 94%;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* Form style */
+  form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+  }
+  
+  label {
+    text-align: center;
+    display: block;
+    margin: 0 0;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  input {
+    margin-top: .5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    background-color: var(--light-dark);
+  }
+  
+  button {
+    width: 7.5rem;
+    margin-top: .75rem;
+    color: white;
+    background-color: var(--secondary);
+    font-size: 1.2rem;
+  }
+
+  #highscore {
+    border: 1px solid red;
+    margin-top: 3rem;
+  }

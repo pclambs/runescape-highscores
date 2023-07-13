@@ -1,11 +1,6 @@
 /* Global style */
 :root {
-    --primary: #6f60ad;
-    --secondary: #007554;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
     --dark: #211f1f;
-    --border-radius: 0.3rem;
   }
   
   * {
@@ -13,7 +8,7 @@
   }
   
   body {
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -46,6 +41,7 @@
   
   p {
     font-size: 1.2rem;
+    margin: 0;
   }
 
   /* Form style */
@@ -54,7 +50,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid var(--dark);
+    padding: .5rem;
+    border-radius: .5rem;
   }
   
   label {
@@ -62,25 +60,29 @@
     display: block;
     margin: 0 0;
     font-size: 1.2rem;
-    display: block;
-  }
-
-  input {
-    margin-top: .5rem;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    background-color: var(--light-dark);
   }
   
-  button {
-    width: 7.5rem;
-    margin-top: .75rem;
-    color: white;
-    background-color: var(--secondary);
-    font-size: 1.2rem;
+  #highscore {
+    border: 1px solid var(--dark);
+    margin-top: 3rem;
+    border-radius: .5rem;
+    padding:.5rem;
   }
 
-  #highscore {
+  .skillColumn {
     border: 1px solid red;
-    margin-top: 3rem;
+  }
+
+  .rankColumn {
+    text-align: end;
+    border: 1px solid red;
+  }
+
+  .levelColumn {
+    border: 1px solid red;
+  }
+
+  .xpColumn {
+    text-align: end;
+    border: 1px solid red;
   }

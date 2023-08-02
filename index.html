@@ -145,41 +145,7 @@
     <!-- Bootstrap -->   
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Custom -->
-    <!-- <script src="assets/js/script.js"></script> -->
-    <script>
-        var nameInputEl = document.querySelector('#username')
+    <script src="assets/js/script.js"></script>
 
-        var formSubmitHandler = function (event) {
-            event.preventDefault();
-
-            var username = nameInputEl.value.trim();
-
-            if (username) {
-                getHighscores(username);
-                nameInputEl.value = '';
-            } else {
-                alert('Please enter a valid RSN');
-            }
-        };
-
-        // how do i listen to form inout for a string?
-        var getHighscores = function () {   
-            // concat string with url query param
-            var apiUrl = 'https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=' + nameInputEl;
-            
-            fetch(apiUrl)
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (data) {
-                    console.log(data)
-            });
-        };
-
-
-        // sort through data and display in table
-
-        nameInputEl.addEventListener('input', formSubmitHandler);
-    </script>
 </body>
 </html>

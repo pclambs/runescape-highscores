@@ -1,6 +1,7 @@
 /* Global style */
 :root {
-    --dark: #211f1f;
+    --dark: #0C0F0A;
+    --light: white;
   }
   
   * {
@@ -12,7 +13,8 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--secondary);
+    color: var(--light);
+    background-color: rgb(43, 26, 0);
     line-height: 1.5;
     font-size: 16px;
   }
@@ -25,7 +27,7 @@
   h6 {
     font-weight: 700;
     margin: 0;
-    color: var(--secondary);
+    color: var(--light);
     line-height: 1.25;
   }
   
@@ -50,7 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid var(--dark);
+    /* border: 1px solid var(--dark); */
     padding: .5rem;
     border-radius: .5rem;
   }
@@ -63,26 +65,26 @@
   }
   
   #highscore {
-    border: 1px solid var(--dark);
+    /* border: 1px solid var(--dark); */
     margin-top: 3rem;
     border-radius: .5rem;
     padding:.5rem;
   }
 
   .skillColumn {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .rankColumn {
     text-align: end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .levelColumn {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .xpColumn {
     text-align: end;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
